@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Silly Story Idea Generator
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It will connect with the OpenAI API to get a suggestion for a silly story writing prompt, based on a topic that you input.
+This is for practice with using the OpenAI API to connect with their large language models.
 
 ## Available Scripts
 
