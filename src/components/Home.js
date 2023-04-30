@@ -2,6 +2,7 @@ import IdeaOutput from "./IdeaOutput";
 import TopicInput from "./TopicInput";
 
 export default function Home() {
+    const ideaText = "";//TODO: replace with fetched output
     //
     return (
         <>
@@ -9,7 +10,9 @@ export default function Home() {
         <p>Input a simple subject for a topic (like "vacuum cleaner" or "cow"), and get a simple idea for a story.</p>
         <p>(This project accesses OpenAI's language models, but is not affiliated with OpenAI).</p>
         <TopicInput />
-        <IdeaOutput />
+        {ideaText && (
+            <IdeaOutput ideaText={ideaText}/>
+          )}
         </>
     )
 }
