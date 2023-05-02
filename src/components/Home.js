@@ -11,7 +11,7 @@ export default function Home() {
         <h1>Silly Story Ideas</h1>
         <p>Input a simple subject for a topic (like "vacuum cleaner" or "cow"), and get a simple idea for a story.</p>
         <p>(This project accesses OpenAI's language models, but is not affiliated with OpenAI).</p>
-        <TopicInput topic={topic} topicSetter={setTopic} outputSetter={setIdeaText} />
+        <TopicInput topic={topic} topicSetter={setTopic} output={ideaText} outputSetter={setIdeaText} />
         {ideaText && (
             <IdeaOutput ideaText={ideaText}/>
           )}
