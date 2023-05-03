@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    height: 3rem;
+    width: 3rem;
+    margin-top: .4rem;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .spinner {
+      animation: Dots-spin infinite 12s linear;
+    }
+  }
+
+  @keyframes Dots-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
