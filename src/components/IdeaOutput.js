@@ -8,7 +8,7 @@ export default function IdeaOutput({ ideaText }) {
     return (
         <>
         <div className={styles.box}>{ideaText}</div>
-        <button onClick={copyText} className={styles.button}>
+        <button onClick={copyText} className='button'>
             Copy
         </button>
         </>

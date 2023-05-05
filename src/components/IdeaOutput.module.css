@@ -9,17 +9,6 @@
     padding: 0.6rem;
 }
 
-.button {
-    background-color: #000;
-    color: #fff;
-    border-radius: 50px;
-    padding: 5px;
-    font-size: medium;
-    font-weight: 200;
-    display: block;
-    margin: auto;
-}
-
 @media screen and (min-width: 480px) { 
     .box {
         width: 384px;
