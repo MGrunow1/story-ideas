@@ -38,7 +38,7 @@ export default function TopicInput({ topic, topicSetter, output, outputSetter })
             </div>
         ) : (
           <button
-              className={styles.submit}
+              className='button'
               onClick={handleSubmit}
           >
               Submit
