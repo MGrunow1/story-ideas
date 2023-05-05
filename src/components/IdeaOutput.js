@@ -1,3 +1,5 @@
+import styles from './IdeaOutput.module.css';
+
 export default function IdeaOutput({ ideaText }) {
     const copyText = () => {
         navigator.clipboard.writeText(ideaText);
@@ -5,8 +7,10 @@ export default function IdeaOutput({ ideaText }) {
     
     return (
         <>
-        <div>{ideaText}</div>
-        <button onClick={copyText}>Copy</button>
+        <div className={styles.box}>{ideaText}</div>
+        <button onClick={copyText} className={styles.button}>
+            Copy
+        </button>
         </>
     )
 }
